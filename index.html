@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Pure JS Parallax with Animation</title>
+</head>
+<body>
+    <div class="header">
+        <h2 id="text">DREAM</h2>
+        <div class="clouds">
+            <img src="/assets/cloud1.png" style="--i:1;">
+            <img src="/assets/cloud2.png" style="--i:2;">
+            <img src="/assets/cloud3.png" style="--i:3;">
+            <img src="/assets/cloud4.png" style="--i:4;">
+            <img src="/assets/cloud5.png" style="--i:5;">
+        </div>
+    </div>
+    <section>
+        <h2>Pure JS Parallax with Animation</h2>
+        <p>
+            Nulla bibendum odio non leo consectetur lobortis. Ut vel ullamcorper nisi. Maecenas vitae mi non nisl auctor dignissim. Morbi facilisis orci eros, vel tincidunt arcu eleifend non. Vivamus leo diam, pulvinar ac mauris ac, sodales tristique tortor. Vestibulum ut orci et augue condimentum pharetra quis a est. Donec mollis, risus nec maximus euismod, purus metus fermentum nibh, lacinia finibus mauris risus sit amet libero. Duis dapibus ligula in mattis commodo. Maecenas hendrerit lectus eu libero ultricies, eu consectetur arcu condimentum. Pellentesque tempor mattis ultricies. Sed tincidunt ut ligula at interdum. Sed eget risus quis leo suscipit sagittis. Ut pharetra elit et nulla convallis bibendum. Fusce maximus risus a commodo dignissim. Pellentesque convallis fringilla ultrices. Donec tempor augue metus, non hendrerit elit mattis aliquam. 
+        </p>
+    </section>
+    <script>
+        let text = document.getElementById('text');
+
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+
+            text.style.top = -value * 0.5 + 'px';
+            console.log(text);
+        });
+    </script>
+</body>
+</html>
